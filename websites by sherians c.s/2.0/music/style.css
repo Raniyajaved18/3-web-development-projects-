@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+}
+html , body {
+    height:  100%;
+    width: 100%;
+}
+#main{
+    height: 95%;
+    width: 100%;
+    background-color: black;
+    display: flex; 
+    padding: 5vw 10vw;
+}
+#left{
+    height: 100%;
+    background-color: rgb(29, 30, 47);
+    width: 45%;
+    /* background-image: url(https://cdn.zeebiz.com/sites/default/files/2023/12/05/271516-animal.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+#right{
+    height: 100%;
+    background-color: rgb(14, 10, 16);
+    width: 55%;
+    padding: 0 3vw;
+}
+#right h3{
+    font-size: 30px;
+}
+#all-songs {
+    /* background-color: red; */
+    height:90% ;
+    margin-top: 30px;
+
+}
+.song-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    padding: 20px 10px;
+}
+
+.song-card:nth-last-child(1){
+    border-bottom: 1px solid white;
+}
+
+.song-card .part1{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    /* justify-content: space-between; */
+}
+
+.song-card img{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.song-card h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.song-card h5 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#player {
+    height: 15%;
+    width: 100%;
+    background-color: rgb(13, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+#player h3{
+    
+    background-color: rgba(3, 16, 35, 0.605);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%
+}
+#player h3 i{
+    font-size: 25px;
+}
+
+#player h3:active{
+    scale: 0.9;
+}
